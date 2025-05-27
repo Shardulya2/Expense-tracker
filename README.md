@@ -1,27 +1,95 @@
-# Expense-tracker
-A minimal web expense tracker written in **Flask**, **SQLite**, and **Bootstrap**. Monitor your expenses daily, organize them by category, see summary reports, 
-and export your records to **PDF** or **CSV**.
 
-## Features
+Daily Expense Manager (Flask + SQLite)
+======================================
 
-- Add, edit, and delete entries
-- See all expenses with optional date filtering
-- Visual spending summary by category
-- Track monthly spending vs. budget
-- Export expenses to:
-- PDF report
-- CSV file
-- Basic authentication-ready structure
-- Lightweight and beginner-friendly
+A full-stack web application that allows users to track daily expenses with the ability to:
+- Add, edit, delete expenses
+- View interactive charts
+- Filter by date
+- Export as CSV or PDF
+- Get notified when monthly budget is exceeded
 
----
+Project Structure
+-----------------
+expense_manager/
+├── app.py
+├── expense.db
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── chart.js
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── add_edit.html
+│   └── report.html
+└── README.txt
 
-## Tech Stack
+Features
+--------
+Expense Management
+- Add new expense with amount, category, date, and note
+- Edit and delete existing expenses
 
-- **Backend**: Python, Flask
-- **Database**: SQLite
-- **Frontend**: HTML, Bootstrap (via Jinja2 templates)
-- **PDF Generation**: fpdf
-- **CSV Export**: Python csv module
+Date Filters
+- Filter expenses by start and end dates
 
----
+Reports & Charts
+- View category-wise bar chart for your expenses using Chart.js
+
+Export Options
+- Export all data as CSV
+- Download PDF report
+
+Budget Alerts
+- Displays warning when monthly limit (e.g., ₹1000) is exceeded
+
+Setup Instructions
+------------------
+1. Clone the Repo
+   git clone https://github.com/your-username/daily-expense-manager.git
+   cd daily-expense-manager
+
+2. Create a Virtual Environment (optional)
+   python -m venv venv
+   source venv/bin/activate    # On Windows: venv\Scripts\activate
+
+3. Install Dependencies
+   pip install flask fpdf
+
+4. Run the App
+   python app.py
+
+5. Visit in Browser
+   http://127.0.0.1:5000/
+
+Code Highlights
+---------------
+app.py
+- Initializes DB with init_db()
+- Handles all routes:
+  - '/' - home with filters
+  - '/add' - add new expense
+  - '/edit/<id>' - edit expense
+  - '/delete/<id>' - delete expense
+  - '/report' - view chart
+  - '/download-pdf' - export as PDF
+  - '/download-csv' - export as CSV
+
+templates/
+- base.html – common layout for all pages
+- index.html – dashboard + filters + table
+- add_edit.html – form for adding/editing expenses
+- report.html – bar chart using Chart.js
+
+chart.js
+- Contains Chart.js rendering logic (can be inlined in report.html too)
+
+Future Enhancements
+-------------------
+- Add user login with Flask-Login
+- Make it PWA/mobile-friendly
+- Add daily/weekly/monthly summary widgets
+- Pie chart and line graph options
+

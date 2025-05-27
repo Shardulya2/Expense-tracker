@@ -11,14 +11,19 @@ A full-stack web application that allows users to track daily expenses with the 
 Project Structure
 -----------------
 expense_manager/
+
  app.py
+ 
  expense.db
+ 
  static/
+ 
     css/
       styles.css
       js/
          chart.js
 templates/
+
      base.html
      index.html
      add_edit.html

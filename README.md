@@ -1,5 +1,5 @@
 
-Daily Expense Manager (Flask + SQLite)
+Expense Manager (Flask + SQLite)
 ======================================
 
 A full-stack web application that allows users to track daily expenses with the ability to:
@@ -48,7 +48,7 @@ Budget Alerts
 Setup Instructions
 ------------------
 1. Clone the Repo
-   git clone https://github.com/your-username/daily-expense-manager.git
+   git clone https://github.com/your-username/expense manager.git
    cd daily-expense-manager
 
 2. Create a Virtual Environment (optional)

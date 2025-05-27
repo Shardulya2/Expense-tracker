@@ -43,7 +43,7 @@ Export Options
 - Download PDF report
 
 Budget Alerts
-- Displays warning when monthly limit (e.g., ₹1000) is exceeded
+- Displays warning when monthly limit (e.g.₹1000) is exceeded
 
 Setup Instructions
 ------------------

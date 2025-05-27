@@ -18,9 +18,9 @@ expense_manager
  
     static
  
-        css/
+        css
            styles.css
-        js/
+        js
           chart.js
     templates
 

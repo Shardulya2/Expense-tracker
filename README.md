@@ -21,7 +21,7 @@ and export your records to **PDF** or **CSV**.
 - **Backend**: Python, Flask
 - **Database**: SQLite
 - **Frontend**: HTML, Bootstrap (via Jinja2 templates)
-- **PDF Generation**: `fpdf`
-- **CSV Export**: Python `csv` module
+- **PDF Generation**: fpdf
+- **CSV Export**: Python csv module
 
 ---

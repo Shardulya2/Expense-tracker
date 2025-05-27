@@ -10,8 +10,8 @@ and export your records to **PDF** or **CSV**.
 - Visual spending summary by category
 - Track monthly spending vs. budget
 - Export expenses to:
-  - ???? PDF report
-- ???? CSV file
+- PDF report
+- CSV file
 - Basic authentication-ready structure
 - Lightweight and beginner-friendly
 

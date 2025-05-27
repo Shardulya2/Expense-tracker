@@ -12,7 +12,7 @@ Project Structure
 -----------------
 expense_manager
 
-     app.py
+    app.py
  
     expense.db
  

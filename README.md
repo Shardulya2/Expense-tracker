@@ -92,4 +92,5 @@ Future Enhancements
 - Make it PWA/mobile-friendly
 - Add daily/weekly/monthly summary widgets
 - Pie chart and line graph options
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/719d17f5-aac6-4976-9fec-948bd9bb64bb" />
 
